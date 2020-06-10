@@ -1,7 +1,19 @@
 /*******************************************************************************
  * Your code here!
  ******************************************************************************/
+const firstName = getInput(0);
+const lastName = getInput(1);
 
+function initials(firstName, lastName) {
+  return firstName[0] + '.' +lastName[0] + '.';
+}
+
+
+const fullInitials = initials(firstName, lastName)
+const nameLength = firstName.length + lastName.length;
+const message = 'Hey, ' + fullInitials + ' Mind if I call you that? Your full name is ' + nameLength + ' letters long!'
+
+console.log(message)
 
 
 /*******************************************************************************
